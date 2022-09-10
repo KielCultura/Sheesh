@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head> <title> Sheesh Application Test BETA </title>
+    
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+            url:'https://api.apispreadsheets.com/data/d3wb0bBFjUHWdPO3/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
+</head>
+    <body bgcolor = "teal"> 
+<center>
+    <img src="https://i.imgur.com/g9mCLTC.jpg" alt ="SHEESH"
+                                   style="width:200x;height:400px;">  <p><font color="white" face="Comic Sans" size="+1"> SHEESH APPLICATION FORM BETA </font></p>
+  <form id="myForm">
+    <label>Full Name</label>
+    <br/>
+    <input name="full_name" />
+    <br/>
+    <label>Email</label>
+    <br/>
+    <input name="email" />
+    <br/>
+    <label>Age</label>
+    <br/>
+    <input type="radio" id="age" name="age" value="10-18" /> 10-18<br/>
+    <input type="radio" id="age" name="age" value="35+" /> 18+<br/>
+    <br/>
+    <label>Gender</label>
+    <br/>
+    <textarea name="gender">
+    </textarea>
+    <br/>
+    <br/>
+  </form>
+  <button onclick="SubForm()">Submit</button>
+    </br> 
+ <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Click or press for jowa</a>
+        </center>
+        
+  
+</body>
+</html>
