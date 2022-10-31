@@ -1,3 +1,1 @@
-# sheeshbaguio 
-THIS IS A SMALL PRJECT BY ONE RANDOM GRADE 9 PERSON WHO LIKES CODING 
-THANK YOU
+This is just a small project i ike doing for fun
